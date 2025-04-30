@@ -1,0 +1,10 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\main.o"
+".\lcd_fun.o"
+".\delay.o"
+".\adc_fun.o"
+--strict --scatter ".\DIGITAL MULTIMETER.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\DIGITAL MULTIMETER.map" -o ".\DIGITAL MULTIMETER.axf"
